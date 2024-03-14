@@ -3,6 +3,9 @@ package com.chiru.springsecurity;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author Chiranjeevi
+ */
 @SpringBootApplication
 public class SpringSecurityApplication {
 
