@@ -1,4 +1,4 @@
-package com.chiru.springsecurity.security;
+package com.chiru.springsecurity.jwt;
 
 import com.chiru.springsecurity.models.UserType;
 import com.chiru.springsecurity.service.CustomUserDetailsService;

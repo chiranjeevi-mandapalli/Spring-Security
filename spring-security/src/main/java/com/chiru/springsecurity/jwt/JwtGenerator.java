@@ -1,4 +1,4 @@
-package com.chiru.springsecurity.security;
+package com.chiru.springsecurity.jwt;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;

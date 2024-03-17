@@ -1,5 +1,7 @@
 package com.chiru.springsecurity.security;
 
+import com.chiru.springsecurity.jwt.JwtAuthEntryPoint;
+import com.chiru.springsecurity.jwt.JwtAuthenticationFilter;
 import com.chiru.springsecurity.models.UserType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

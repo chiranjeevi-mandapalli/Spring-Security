@@ -1,5 +1,6 @@
-package com.chiru.springsecurity.security;
+package com.chiru.springsecurity.jwt;
 
+import com.chiru.springsecurity.security.ErrorResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -24,7 +25,7 @@ public class JwtAuthEntryPoint implements AuthenticationEntryPoint {
         log.error("Unauthorized error; {}",authException.getMessage());
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-        ErrorResponse  errorResponse = new ErrorResponse(UNAUTHORIZED_USER,authException.getMessage(),HttpServletResponse.SC_UNAUTHORIZED);
+        ErrorResponse errorResponse = new ErrorResponse(UNAUTHORIZED_USER,authException.getMessage(),HttpServletResponse.SC_UNAUTHORIZED);
         final ObjectMapper mapper = new ObjectMapper();
         mapper.writeValue(response.getOutputStream(),errorResponse);
     }

@@ -1,4 +1,4 @@
-package com.chiru.springsecurity.service;
+package com.chiru.springsecurity.repository;
 
 import com.chiru.springsecurity.models.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
